@@ -6,7 +6,7 @@
 <body>
 <footer class="container">
   <p class="float-end"><a href="#">Back to top</a></p>
-  <p>&copy; 2017–2022 Ban Alexandru Mircea &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <p>&copy; 2022-2023 Ban Alexandru Mircea &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 </footer>
 </body>
 </html>

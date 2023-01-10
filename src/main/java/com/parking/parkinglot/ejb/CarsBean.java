@@ -38,11 +38,11 @@ public class CarsBean {
     public List<CarDto> copyCarsToDto(List<Car> cars) {
         List<CarDto> carsDto = new LinkedList<CarDto>();
 
-        for (int i = 0; i < cars.size(); i++) {
-            CarDto dto = new CarDto(cars.get(i).getId(),
-                    cars.get(i).getLicensePlate(),
-                    cars.get(i).getParkingSpot(),
-                    cars.get(i).getOwner().getUsername());
+        for (Car car : cars) {
+            CarDto dto = new CarDto(car.getId(),
+                    car.getLicensePlate(),
+                    car.getParkingSpot(),
+                    car.getOwner().getUsername());
             carsDto.add(dto);
         }
 
@@ -73,9 +73,9 @@ public class CarsBean {
 
         List<CarDto> allCars = findAllCars();
 
-        for (int i = 0; i < allCars.size(); i++) {
-            if (Objects.equals(allCars.get(i).getId(), carId)) {
-                car = allCars.get(i);
+        for (CarDto allCar : allCars) {
+            if (Objects.equals(allCar.getId(), carId)) {
+                car = allCar;
             }
         }
 
